@@ -1,0 +1,7 @@
+Bunch of Playstation 3 Syscon info - diagnosing programs.
+
+https://www.mediafire.com/file/f3b90d3kgbgavgr/Playstation_3_syscon__TTL_stuff.zip/file
+
+FTDI ft232rl ttl to usb devcice or similar and python/windows is needed.
+
+Enjoy!
