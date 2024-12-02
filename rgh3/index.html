@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style/style.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+</style>
+</head>
+<title>Lovejoy.media/xbox/rgh3</title>
+<body>
+<a href="../../index.html">Home</a><br>
+<h4>Reset Glitch Hack 3</h4>
+Pretty neat release by devs 15432, DrSchottky and Octal450<br>
+Unlike previous RGH versions that use a modchip, RGH3 glitches the cpu with the motherboards onboard southbridge to run freeboot images<br>
+<br>
+RGH3 demo from 15432:<br>
+<a href="https://www.youtube.com/watch?v=iVYqxLZ_KL0">https://www.youtube.com/watch?v=iVYqxLZ_KL0</a><br>
+<br>
+Release of the rgh3 ecc images, scripts and diagrams<br>
+<a href="https://www.mediafire.com/file/e2nqdtto8umh04b/RGH3_beta.rar/file">RGH3 Beta Download</a><br>
+<a href="https://cdn.octalsconsoleshop.com/J-Runner%20with%20Extras.zip">J-Runner by Octal450</a><br>
+<br>
+Before starting you will need a copy of the consoles modified nand and cpu key<br>
+from a previous RGH install<br>
+<br>
+*May not need to have a previous install, haven't tested on stock console*<br>
+----------------------------------------------------------------------------<br>
+Solder the nand r/w wires to the console and open J-Runner<br>
+<br>
+Open "Custom Nand/Timing File Function" from the advanced menu<br>
+<img src="img/customnandtiming.png"><br>
+<br>
+In the Command column select "Write" then "Size": 16 for most motherboards<br>
+<br>
+Some Jasper and Corona boards have different size onboard nands<br>
+Click the question mark in the Console type section to see motherboard and nand size<br>
+<img src="img/nandtype.png"><br>
+<br>
+Navigate to the RGH3 folder and find the correct RGH3 Ecc.bin file made for the motherboard<br>
+<img src="img/jrunner.png"><br>
+<br>
+Next open J-Runners "Custom Nand/Timing File Functions" prompt<br>
+Click run to write to the console<br>
+<br>
+Wiring diagrams from the release <a href="wiring/index.html">here</a><br> 
+<br>
+Building RGH3 Nand image<br>
+Similar to XeBuild use the 2to3.py script included in the release to build a complete nand image for the console<br>
+RGH2 to 3 by DrSchottky<br>
+<br>
+Open command prompt and navigate to the Freeboot_2to3 folder from the RGH3 release and run the python 2to3 script<br>
+May need to install python before running this<br>
+<br>
+Gather the consoles modified Nand & Cpu key<br>
+Place the modified nand and RGH3 Ecc in the Freeboot_2to3 folder<br>
+<br>
+Usage: python.exe 2to3.py RGH3_ECC.bin updflash.bin CPUKEY outfile.bin<br>
+<br>
+<img src="img/success2to3.png"><br>
+<br>
+Xell header not found error when building with unmodified nand<br>
+<br>
+<img src="img/unmodifiednanderror.png"><br>
+<br>
+<br>
+<u>Quick install on a Corona motherboard w/postfix adapter</u><br>
+<br>
+POST_BUS_1 connected to #5 pad on the adapter<br>
+<img src="img/post.jpg"><br>
+<br>
+CPU_PLL_BYPASS [1-10k resistor recommended]<br>
+<img src="img/pll.jpg"><br>
+<br>
+Xell<br>
+<img src="img/rgh3xell.JPG"><br>
+<br>
+</body>
