@@ -1,0 +1,14 @@
+MD5 Hash Checksum
+-------------------------------
+Open command prompt
+-- 
+certutil -hashfile <file> MD5.
+
+Example from PS3 CFW
+---------------------------
+
+> certutil -hashfile "C:\Users\condor\Downloads\CFW 4.88.2 Evilnat Cobra 8.3 [CEX]\PS3\UPDATE\PS3UPDAT.PUP" MD5
+
+  MD5 hash of C:\Users\condor\Downloads\CFW 4.88.2 Evilnat Cobra 8.3 [CEX]\PS3\UPDATE\PS3UPDAT.PUP:
+  3202971e05140f24e52b36d5c443ad35
+  CertUtil: -hashfile command completed successfully.

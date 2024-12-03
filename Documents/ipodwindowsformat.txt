@@ -1,0 +1,32 @@
+How To Reformat iPod as Windows format with SD/CF Card Mod (Fat32) 
+------------------------------------------------------------------
+
+I was recieving a 1413 error in itunes 12 and reformatting the sd card (fat32/exfat)
+wasn't allowing me to restore in windows but was able restore in itunes 12.9.5.5 running in mojave to hfs format.
+
+If you can format your ipod with a sd/cf adapter in mac os but not in windows this is what i found to 
+restore/format back to Fat32 Windows device format.
+
+Install an older version of iTunes 7.0.2.16 or similiar on Windows 7 or earlier 
+
+http://www.oldversion.com/windows/itunes-7-0-2-16
+
+(may work on 8/10/11 but recieved install errors i made a windows 7 vm and seemed to work good)
+
+The lastest 12.12+ itunes versions don't seem to have the same support for older iPods in windows anyway but needed to download
+the ipod software .ipsw file.
+
+Connect ipod in latest itunes and click restore it should give a few prompts then download the update but will fail to restore.
+
+The update files usually download to:
+
+C:\Users\UserName\AppData\Roaming\Apple Computer\iTunes\iPod Software Updates -- iPod_13.1.3.ipsw 
+
+Once the older version of itunes is installed connect the ipod navigate to restore
+ hold and shift click on restore 
+ -- navigate to the ipod firmware .ipsw file and it should restore to a windows fat32 formatted device.
+ 
+
+
+
+

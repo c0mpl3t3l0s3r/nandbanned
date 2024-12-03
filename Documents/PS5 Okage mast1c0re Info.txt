@@ -1,0 +1,27 @@
+PS5 Okage mast1c0re Info:
+----------------------------
+
+mast1c0re-file-loader
+
+Console IP: 10.0.0.115
+
+mast1c0re-ps2-network-game-loader-PS5-6-50.elf
+
+random trophies are unlocked doing certain things during the elf loader not entirely sure
+could be from the pre edited save idk seems to happen when launching snes emu/game
+
+seems to be like a softmodded ps2 
+
+ulaunch works can launch ps2 elfs directly
+snes station works
+
+Ntsc Ps2 iso games:
+------------------
+Tokyo Xtreme Racer Zero launches to menu crashes during level/track loading.
+Call of Duty 3 crashes to main menu
+Gran Turismo 3 starts seems to run fine some flickering in the menu 
+Ratchet and Clank starts but freezes before main title menu like it does on the ps3
+
+To send ps2 iso .conf files use the mast1c0re-send-file.py script.
+
+$ python mast1c0re-send-file1.py --ip 10.0.0.115 --file '/c/Users/Connor/Desktop/Okage Gamesave/Games/Tokyo Xtreme Racer Zero/SLUS_20189.conf'

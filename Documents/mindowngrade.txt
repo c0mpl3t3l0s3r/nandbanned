@@ -1,0 +1,2 @@
+min downgrade version slim 3.40
+min downgrade version phat 1.00

@@ -1,0 +1,13 @@
+Playstation 2 HDD-OSD Info
+------------------------------
+
+Write the HDD-OSD img using HDDCOPY.EXE
+
+HDDOSD_100J_ATADP_DTL-H_FIX_48BIT_APPS.IMG
+
+For Ps1 games: PFS Batckit.
+
+
+Ps2 games: install via HDLGameInstaller (disc/ftp)
+
+

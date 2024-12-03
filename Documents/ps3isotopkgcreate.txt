@@ -1,0 +1,102 @@
+How to create .pkg from .iso playstation 3 backup
+---------------------------------------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+This may or may not work for all ps3 games
+
+Necessary stuff:
+------------------------
+Playstation 3 running CFW (May work on HFW or Hen)
+A PS3 backup .Iso file (Using The Last of Us for examples)
+
+Progams/Scripts:
+-------------------------
+PS3GameExtractor v1.8.7.0 // https://www.psx-place.com/resources/ps3-game-extractor.824/
+Cfw2Ofw Helper v11h1 // https://github.com/friendlyanon/CFW2OFW-Helper/
+make-backup-pkg // https://www.youtube.com/watch?v=2tARpF9F1B8
+
+----------------------------------------------------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+To convert PS1/2 Games:
+ *PS1: pop-fe-ps3 // https://github.com/sahlberg/pop-fe/ *
+ *PS2: Ps2 Classics Gui // https://www.psx-place.com/resources/ps2-classics-gui.638/ *
+ 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ 
+PS3GameExtractor v1.8.7.0
+--------------------------------------------------
+
+Extract iso using PS3GameExtractor v1.8.7.0
+
+Select the unpack iso option
+
+Save to extracted iso folder
+
+This will give you a folder called "ExtractedISO"
+with PS3_GAME & PS3_UPDATE
+
+Cfw2Ofw Helper
+--------------------------------------------------
+
+Next navigate to the extracted Cfw2Ofw Helper folder
+
+Drag & drop the newly created PS3_GAME folder onto CFW2OFW Helper.exe 
+a command prompt will start converting/extracting the folders it may 
+take a bit depending on the games size
+
+After CFW2OFW is done a new folder with the game title id
+ex. Game_Title_111_(BCUS00000)
+    The_Last_of_Us_111_(BCUS98174)
+
+Inside this folder will be two new folders with the game and patch data
+ex.
+BCUS00000 Patch
+NPUA00000 Game
+
+The Last of Us: 
+BCUS98174 
+NPUA98174
+
+Depending on the game they may be named slightly different 
+
+
+make-backup-pkg
+--------------------------------------------------
+
+Next copy the 3 files from make-backup-pkg to the directory with the game and patch folders
+
+ex.
+ BCUS00000
+ NPUA00000
+ do.bat
+ makepkg1.exe
+ make-backup-pkg2.ex
+
+Then double-click do.bat or drag and drop the two folders onto do.bat
+
+make-backup-pkg will now create a .pkg to install on the console
+
+Game:
+ex. 000000-NPUA00000_00-1GAME00000000000.pkg 
+ 
+	000000-NPUA98174_00-1GAME00000000000.pkg
+	
+It will also create two additional pkg files:
+
+Patch:
+ex. 000000-NPUA00000_00-2PATCH0000000000.pkg
+
+	000000-NPUA98174_00-2PATCH0000000000.pkg
+	
+License:
+ex. 000000-NPUA00000_00-3LIC000000000000.pkg
+
+	000000-NPUA98174_00-3LIC000000000000.pkg
+
+You may or may not have to install all three packages
+but install the game.pkg first and see if it launches
+
+Transfer via ftp/usb into the packages directory and install
+with cfw package manager
+

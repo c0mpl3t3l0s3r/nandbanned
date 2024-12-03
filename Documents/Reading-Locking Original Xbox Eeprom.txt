@@ -1,0 +1,148 @@
+Reading hard drive key from Original Xbox Eeprom
+--------------------------------------------------
+
+Was going through some electronics and found my old Xbox. Went to power on
+the seemed like it wasnt  recieving any power. The power/eject board had a few burnt traces i soldered 
+a few wires and the console turned on! I was suprised it started well sort of.. I didnt have the original 
+drive for the console so no HDD key. I found a few things on reading the eeprom info with an Arduino/Raspberry Pi.
+Had luck with DuinoBoX and after a few tries i finally got a full eeprom backup. The backup worked out and was able to revive
+the console with the HDD key and an ide hard drive.
+
+Made a little guide for locking/cloning hardrives - eeprom reading
+
+Hardware needed:
+==============================
+Stock Xbox without its hard drive/eeprom
+Xbox able to run homebrew (ChimpLoader) via soft/hardmod*
+Arduino & usb Type-B Cable(I used an arduino uno seemed to work)
+Jumper wires to connect the Arduino and the Xbox
+Pc running windows Xp-10 (Tested on Windows 10)
+Molex power adapter
+
+Locking capable ide hard drive
+look here: https://xboxdrives.x-pec.com/?p=list for compatible drives
+(sata drives can work with ide to sata adapter & 80wire ide cable) 
+
+Software Needed:
+===========================
+
+Arduino IDE
+https://www.arduino.cc/
+
+LiveInfo by Yoshihiro:
+--------------------------
+An eeprom editing and creation tool for the original Xbox
+https://legacy.downloads.diomtec.com/homebrew/xbins/PC%20Based%20Applications/eeprom%20tools/liveinfo/
+
+
+DuinoBoX-v0.5.5-x86:
+-----------------------
+https://github.com/ExtraordinaryBen/DuinoBoX
+Be sure to upload the duinobox-sketch.ino to the Arduino*
+
+\DuinoBoX-v0.5.5-x86\DuinoBoX-v0.5.5-x86\duinobox-sketch\duinobox-sketch.ino 
+
+Chimp Loader:
+--------------------
+https://github.com/Rocky5/Chimp261812
+
+A hard drive utility program for cloning/creating new drives for the original xbox
+it is also able to lock and unlock drives 
+
+Found on most xbox utility cd/dvd iso's that are available.
+(Rocky 5, TrueHexen, Slayers, AIO)
+----------------------------------------------------------------------------
+
+*May be able to get XboxHdm to work with an ide capable computer and the new eeprom*
+https://www.sourceforge.net/projects/xboxhdm2/
+https://consolemods.org/wiki/Xbox:XboxHDM#Using_XboxHDM_for_USB_or_SATA_Drives_(Windows)
+
+--------------------------------------------------------------------
+
+Eeprom | HDD Key Backup 
+=======================================
+Connect to the lpc header the second row from the top 
+(top being ide connector side) are the points
+needed SDA and SCL. Ground is on the bottom row on the left pin.
+
+Soldering in a pin header is useful
+
+https://github.com/ExtraordinaryBen/DuinoBoX/raw/master/DuinoBoX-Diagram.png
+https://camo.githubusercontent.com/76a1686701e8a0dfd54f75f361ee36f27e2a11dbb847338d2a14e59b427fd210/68747470733a2f2f692e696d6775722e636f6d2f4e6f3762764c462e706e67
+
+Open DuinoBoX.exe and select the COM port for the Arduino 
+
+Next turn on the Xbox and click Read this process is a bit finicky and may take a few tries
+to get a successful read. After it reads the data click File>Save EEPROM.Bin
+
+*It took a few times of reconnecting and restarting the console to get a working file. 
+Reset and upload the sketch to the Arduino again may also help. If having trouble further try
+powering on the console while clicking read inside DuinoBox at the same time. 
+
+Keep this file safe.
+
+The file Will most likely be a 256 bytes possibly 512/1mb
+
+From here take the EEPROM.bin file and open it with LiveInfo.
+
+If the read was successful it will load the motherboard revision, serial number hard drive 
+and other info stored inside the eeprom.
+
+*Do note that live info sometimes generates new info when opened as it can be used to create new/spoofed eeprom images*
+*Be sure to check the serial number is correct when opening the eeprom otherwise the hdd key may be incorrect*
+
+From here we can use the HDD Key to lock the drive via Chimp Loader on the modified Xbox
+
+Locking/Unlocking Hard drives via Chimp Loader
+=====================================================
+
+Take the top shell from the modified xbox off and turn the console on let it boot into alternate dashboard (UnleashX/Evo/Avalaunch)
+/utility disc (Rocky 5, TrueHexen, Slayers AIO) disconnect the dvd drive ide cable and connect it to the hard drive you 
+are using to lock or clone the original drive. Also connect the molex power adapter to the hard drive. 
+
+After navigate and launch Chimp Loader it will greet you with a few prompts until the program starts.
+
+A hard drive icon will appear press A once the new drive is connected via the ide cable from the disc drive along with 
+external molex power adapter. Set the jumper to slave.
+
+After Chimp loader finishes loading the linux distro press A 
+
+*This prompt will give ftp/ip info for transferring eeprom via ethernet if connected.*
+
+user:root
+pass:xbox
+
+--------------------------------------------------
+Scan the drives connected using the first option
+
+Next go to #4 TSOP/Chipped Xbox confirm yes twice 
+
+Then option #5 Other Options > #4 Advanced Features say yes to the locking/unlocking prompts
+
+Next to lock the drive click "Lock Drive"
+
+Depending if the console is stock you are preparing the drive for
+you will need to transfer the eeprom created from the DuinoBox read 
+to the /tmp/eeprom.bin via the an ftp connection.
+
+Then select lock from /tmp/eeprom.bin
+
+If the console you are using is where your installing the drive select lock from motherboard
+
+*Consoles that are tsop or modchipped don't require a drive to be locked*
+
+From here you can clone the original/master drive to the slave/new(locked) drive via option #2
+there are a few options for partitions and stuff most of the defaults should be fine.
+
+Scan the ide devices again to make sure the new/slave drive locked after it completed cloning. 
+
+Reinstall the ide cable into the disc drive and replace the hardrive in the caddy with the new locked drive. 
+
+Once everythings connected if it all went well it should startup into the dashboard. 
+
+*If you recieve an error 5/6 its possible the hard drive key is not correctly set and may need to try relocking the drive.
+Make sure the hard drives jumper is set to master if it still doesn't start to the dashboard*
+
+Well I was able to revive the console that otherwise had no power initially. The console ate the raspberry pi i was trying
+to read the eeprom with but was able to get a good read from the arduino. Console seems to be working fine otherwise will have
+to tinker with the sticky dvd drive but the components look fine for now so hopefully it stays working for a bit. 

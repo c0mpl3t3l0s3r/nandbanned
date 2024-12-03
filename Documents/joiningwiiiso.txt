@@ -1,0 +1,18 @@
+Joining Wii Iso files:
+----------------------------
+Dolphin:
+cd <directory>
+copy /b GAMEID.part?.iso GAMEID.iso
+
+Reddit:
+[deleted]
+·
+3 yr. ago
+
+First, put all the multiple iso files into a folder. You need to open the command prompt at that folder, you can do that by opening that folder first, then follow 0:47 to 0:54 of this video: https://youtube.com/watch?v=bgSSJQolR0E
+
+Now type in copy /b xxxxxx.part0.iso+xxxxxx.part1.iso+xxxxxx.part2.iso fulliso.iso
+
+Replace xxxxxx.part0.iso with the name of the first part of your iso (if you have a part 0, it comes before part 1), xxxxxx.part1.iso with the name of the second part of your iso, so on. If you have a part 3, you have to type +xxxxxx.part3.iso after +xxxxxx.part2.iso and replace xxxxxx.part3.iso with the name of the third part of your iso, repeat until you entered in all the names of your iso parts.
+
+After you hit the enter button, you should get fulliso.iso in the folder which is your full iso.
