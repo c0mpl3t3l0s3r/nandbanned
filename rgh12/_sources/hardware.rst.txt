@@ -1,0 +1,27 @@
+Hardware
+***********
+  
+	  
+Necessary Hardware & Supplies
+
+	  * Soldering iron, solder, flux along with 26-30AWG wire
+	  
+	  * Modchip: X360 Ace V3, CoolRunner revC or Matrix Glitcher
+	  
+	  * SPI & J-TAG Programmer/NAND flasher: JR Programmer, NandX, Xflasher
+	  
+	  * PC running Windows XP-11
+	  
+	  * Mini USB cable
+	  	  
+	  
+Motherboard Specific Parts
+	  	 
+	  * 22k resistor (Phat Motherboards)
+
+	  * Postfix adapter (Slim Corona Motherboards only) 
+	  
+	  * 4gb CoronaSD Card Tool or XFlasher (Slim 4gb Corona Motherboards) 
+ 
+	 
+	

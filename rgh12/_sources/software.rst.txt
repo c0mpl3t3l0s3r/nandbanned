@@ -1,0 +1,32 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Hardware & Software
+======================
+
+
+Software
+*********
+
+There are many programs that modify and create nand images and files for the Xbox 360. This guide focuses on J-Runner and its many functions.
+
+	.. image:: _images/jrunner.png
+
+	**J-Runner w/ Extras** by Octal450 has many capabilities for reading & writing nand images. Also has a built in modchip programming section with support for many chips and tunings. 
+	
+	Download: `J-Runner w/Extras by Octal450 <https://cdn.octalsconsoleshop.com/J-Runner%20with%20Extras.zip>`_ 
+	
+Timing Files
+*************
+
+	A small collection of timing file for most modchips and motherboards.
+
+		* 15432  RGH 1.2 Original `Here <https://disk.yandex.com/d/lDH5ZqoDhDPrj>`_
+	 
+		* S-RGH 1.2 Slim Timing `Here <https://drive.google.com/file/d/0BxozkBU1EslCbEJybnYzRjNUaHM/view?resourcekey=0-_Pi3rwfTMW3_xmI3XqrV4g>`_ *(For Slim Consoles)*
+			
+		* Octal450 RGH 1.2 V2 `Here <https://cdn.octalsconsoleshop.com/RGH1.2%20V2.rar>`_ 
+	 
+		* Falcon/Jasper Dynamic Ace v3 Tuning file `Here <https://drive.google.com/file/d/0B1XeiEQ0PMjPc1FXdUl4UlB1SHM/view?usp=sharing>`_	

@@ -1,0 +1,46 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Modified Nand
+=======================
+
+After booting into XeLL and retrieving the CPU key,
+its time to make a modified Nand image with J-Runners XeBuild function.
+Creating a modified Nand is also reffered to as a FreeBoot image.
+
+XeBuild Image
+*******************
+
+Open J-Runner and select one of your nand dumps by clicking "Load Source"
+
+*It may be there automatically if J-Runner hasn't been closed*
+
+.. image:: _images/xebuild.gif
+
+1. Select "Glitch2"
+2. Select 17599 Dash Version
+3. Enter CPU Key
+4. Click "Create XeBuild Image"
+
+.. image:: _images/xebuilday.png
+
+Once xeBuild finishes its time to write the final image to the console
+
+5. Click "Write Nand"
+
+
+After J-Runner is done writing unplug the power and the programmer from the motherboard.
+
+Wait a minute or so then turn the console on and if all went well the console will boot up to the stock dashboard.
+
+.. image:: _images/finaldash.bmp
+
+After the initial startup power down the console and
+press the eject button it should now load into Xell.
+
+.. note::
+	Turning on the console via the eject button will only boot in to Xell.
+	
+

@@ -1,0 +1,61 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+.. image:: _images/rgheader.jpg
+
+Getting Started
+================
+   
+Here is a brief walkthrough into installing modchips inside the Xbox 360 using Reset Glitch Hack 1.2 method created by 15432.
+The Reset Glitch Hack allows the Xbox to run unsigned code, emulators and all sorts of homebrew. 
+Some hardware and software as well as the console itself are required.
+
+
+
+.. glossary::
+
+    Console
+	  All Xbox 360 consoles  except for the Slim E Winchester revision are supported. The latest 17559 dashboard is recommended for game comapatabilty. https://www.xbox.com/system-update-usb
+	  
+	  *If you have a a console on dashboard 7371 you can use the J-Tag exploit rather than RGH.  The J-tag process is a bit different.* 
+	  
+    Hardware
+	  Here are a few materials needed to install the modchip. 
+	  
+	  * Soldering iron, solder flux along with 26-30AWG wire*
+	  
+	  * Programmer/nand reader such as a JR Programmer, NandX, Xflasher or LPT Cable*
+	  
+	  * Modchip ex. X360 Ace V3, CoolRunner revC or Matrix Glitcher*
+	  	 
+	  * 22k resistor for Phat consoles
+	  
+	  * Postfix adapter Slim Corona only may be needed
+	  
+	
+    Software
+	 Some neccesary programs and times files
+	 
+	 * J-Runner w Extras by Octal `Here <https://cdn.octalsconsoleshop.com/J-Runner%20with%20Extras.zip>`_
+	 
+	 * xeBuild 1.21 `Here <https://xbl.ninja/xeBuild_1.21.zip>`_
+
+	 * Octals Timing files RGH 1.2 V2 `Here <https://cdn.octalsconsoleshop.com/RGH1.2%20V2.rar>`_
+
+	 * 15432 Timing files RGH 1.2 `Here <https://disk.yandex.com/d/lDH5ZqoDhDPrj>`_
+
+	 * Slim Timing files S RGH 1.2 `Here <https://drive.google.com/file/d/0BxozkBU1EslCbEJybnYzRjNUaHM/view?resourcekey=0-_Pi3rwfTMW3_xmI3XqrV4g>`_
+
+.. warning::
+   Attempting this modification can permanently damage the console! Proceed with caution!  
+	  
+Next we have to indentify what revision & motherboard the console has inside.
+
+
+   
+
+   
+
+   

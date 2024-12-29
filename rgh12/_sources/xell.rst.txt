@@ -1,0 +1,30 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Launching XeLL
+*******************
+
+.. image:: _images/xell.png
+
+Connect power to the motherboard, plug in fans and ring of light board.
+
+Power on the console and it should start up into XeLL. If the console takes longer the +/- 60 seconds or so
+try flashing a different timing file. For Falcon and Jasper Consoles with an Ace V3 try flashing the dynamic
+tuning file.
+
+After a few seconds Xell will initialize the system and output the fusesets and CPU/DVD keys.
+
+
+.. image:: _images/xellcpukey.png
+
+Write down the CPU key, it is needed to create a modified image with XeBuild in the next step.
+
+As XeLL starts a  http server is started, connecting the console via ethernet and enter the local IP address
+into a web browser, the CPU/DVD keys along with options to download raw flash, key vaults and fuse sets.
+
+.. image:: _images/XeLLWeb.png
+
+Once the cpu key is saved power off the console but keep it connected to power
+

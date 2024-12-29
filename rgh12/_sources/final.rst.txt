@@ -1,0 +1,27 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+Useful Applications
+=======================
+
+After the console is booting it's time to install apps run
+homebrew backup a game or try running linux.
+
+.. image:: _images/aurora.bmp
+
+This is Aurora an alternative dashboard with some emulators, homebrew and a few games on the hard drive.
+
+
+Applications
+
+	  * XeXMenu- File & Backup manager `Here <https://www.se7ensins.com/forums/threads/xex-menu-1-2-download.713817/>`_
+	 
+	  * Dashlaunch- Allows changes to boot settings, configure temperature controls and other system  options similar to a computer bios `Here <https://www.realmodscene.com/index.php?/topic/9709-dashlaunch-321-fixed-17559-kernel-support-added/>`_
+	  
+	  * Xbox Compatability Fixer- Reconstructs the partition that enables a modified emulator to play original Xbox games `Here <https://digiex.net/threads/xbox-360-hacked-xbox-backwards-compatibility-v5832-april-2018-download.15742/>`_
+	  	 
+	  * Aurora alternative dashboard `Here <http://phoenix.xboxunity.net/#/news>`_
+

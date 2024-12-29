@@ -1,0 +1,35 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+ECC Images
+======================
+
+Creating and writing an ECC image to your console overwrites the
+first 50 blocks of the nand allowing the console to boot Xell.
+
+Xell is a Linux based bootloader allowing access to the consoles
+cpu/dvd keys, fuse sets and other critical system information. The cpu key
+is needed to build the final modified nand image.
+
+.. image:: _images/xell.png
+
+Make sure "Dash Version" is set to 17559 and your motherboard revision is correct.
+
+.. image:: _images/dashversion.png
+
+.. image:: _images/ecc.png
+
+A. Select Glitch2 in the XeBuild section
+B. Click "Create ECC"
+C. Click "Write ECC"
+
+
+.. note::
+	When clicking the "Create ECC" button it may ask to load a nand dump.
+	Navigate to the nandump1.bin from the nand read. It may be there if 
+	J-Runner hasn't been closed.
+	
+After the ECC is finished writing disconnect the programmer from the r/w wires on the motherboard
+along with the power cables.

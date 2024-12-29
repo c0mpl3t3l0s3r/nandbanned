@@ -1,0 +1,43 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+Resources
+=======================
+
+Here are a few sites with all kinds of info, updates & parts.
+
+.. image:: _images/Se7en.png
+       :alt: Se7enSins
+       :target: https://www.se7ensins.com/forums/
+	   
+.. image:: _images/octalconsoleshop.png
+       :alt: Octals Console Shop
+       :target: https://octalsconsoleshop.com/
+
+.. image:: _images/WeekendModder.png
+       :alt: Weekend Modder
+       :target: https://weekendmodder.com/index.html
+
+.. image:: _images/RealModscene.png
+       :alt: Real Mod Scene
+       :target: https://www.realmodscene.com/   
+	   
+.. image:: _images/themodshop.png
+       :alt: The Mod Shop
+       :target: https://themodshop.co/home/
+
+.. image:: _images/360hq.png
+       :alt: 360Hq
+       :target: https://www.360-hq.com/
+
+.. image:: _images/phenommod.png
+       :alt: Phenom Mod
+       :target: https://store.phenommod.com/index.php?route=common/home
+	  
+.. image:: _images/xbins.gif
+       :alt: Xbins
+       :target: https://www.xbins.org/
+	   

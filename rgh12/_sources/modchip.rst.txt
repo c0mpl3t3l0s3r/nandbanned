@@ -1,0 +1,32 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Modchips
+======================
+
+The modchip or glitch chip is a key piece to making the console boot console into a modified state.
+
+Here is a few Xilinx based modchips that work great with this method.
+
+X360 Ace V3
+**********************
+.. image:: _images/acev3.jpg
+Great chip also supports dynamic tuning files.
+
+*Recommended for Slim consoles with the S-RGH method*
+
+CoolRunner RevC	
+**********************
+.. image:: _images/revc.png
+Originally made by Team Xecuter but clones are still available.
+
+Matrix Glitcher
+**********************
+.. image:: _images/matrix.jpg
+Another great modchip consistent boot times.
+
+All of these chips achieve the same results. The Coolrunner and Matrix chips require soldering
+a smaller clock point on the motherboard.
+

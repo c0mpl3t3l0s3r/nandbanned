@@ -1,0 +1,64 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+Modchip Installation
+=============================
+
+Wiring up the motherboard is the most difficult part of this whole process.
+Some points are very small so take your time clean your points and use flux.
+
+
+A good location for the modchip is on the a/v shield shown 
+below or under the disc drive on slim consoles. 
+
+
+.. image:: _images/motherboardchiplocation.jpg
+
+Modchip Wiring
+*******************
+
+Here are a few diagrams for wiring up the Phat motherboards
+
+
+Phat Wiring
+*******************
+
+ **X360 Ace V3**
+
+		.. image::  _images/x360acergh12phatinstalldiagram.png
+		   :width: 600
+	
+ **CoolRunner Rev C**
+
+		.. image:: _images/coolrunnerrevcrgh12.jpg
+		   :width: 600
+
+ **Matrix Glitcher**
+
+		.. image:: _images/matrixglitcherrgh12diagram.jpg
+		   :width: 600
+
+		   
+
+Slim Wiring
+*******************
+
+Here are a few diagrams Trinity/Corona Slim Motherboards 
+
+
+  **X360 Ace V3** Corona V1/V2
+
+	.. image:: _images/srgh.gif
+		   :width: 600
+
+**X360 Ace V3** Corona V3/V6
+
+	.. image:: _images/coronav36.gif
+		   :width: 600
+
+
+Once the modchip is wired in, its time to boot into XeLL to get 
+the consoles CPU key.

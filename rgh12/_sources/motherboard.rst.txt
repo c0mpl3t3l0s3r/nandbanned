@@ -1,0 +1,31 @@
+.. RGH documentation master file, created by
+   sphinx-quickstart on Sun Aug 29 11:05:59 2021.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+
+Motherboard Identification
+===========================
+
+Next find which revision & motherboard the console has.
+
+.. image:: _images/motherboardident.jpg
+`Zoom <_images/motherboardident.jpg>`_
+
+
+`Alternate <_images/consoleiddates.jpg>`_
+
+The diagram above should help identify your motherboard from the power rating
+and socket type.
+
+.. note::
+   If the motherboard is a Corona there are four revisions.
+   V1 doesn't require a post-fix adapter but V2-V4 needs one aswell as the resistor points bridged
+   look `Here <_images/coronaguide.jpg>`_
+   to confirm the motherboard revision. 
+   
+   Certain Corona motherboards come with a 4gb eMMC nand which 
+   requires either an sd card tool or an XFlasher to read and write the nand. `Here <https://weekendmodder.com/RGH-Corona4gb.html>`_
+   is a guide on reading & writing 4gb nands by WeekendModder.
+   

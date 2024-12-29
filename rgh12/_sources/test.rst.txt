@@ -1,0 +1,9 @@
+
+Programming the Modchip
+========================
+.. image:: _images/xflasher.jpg
+
+JR-Programmer	
+**********************
+Nand-X
+**********************
