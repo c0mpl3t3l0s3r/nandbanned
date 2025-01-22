@@ -1,8 +1,28 @@
+head {background-color: #FFFFFF;}
+    
 body {background-color: #000000;
 color: #FFFFFF;
 margin: 100px;
-background-image: url("smashasllcomputers.png") ;
+background-image: url("") ;
 border-style: 1px solid ;}
+    
 p { text-align: center ;}
+footer { text-align: center ;
+          font-family: "Mona Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <100>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 107.9;
+	text-decoration: none;
+    }
 a { color: #FFFFFF ;
-	text-decoration: none;}
+      font-family: "Mona Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <300>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 107.9;
+	text-decoration: none;
+    margin-left: 250px;
+}
