@@ -1,4 +1,4 @@
-Reading hard drive key from Original Xbox Eeprom
+Reading hard drive key from Original Xbox Eeprom by CL
 --------------------------------------------------
 
 Was going through some electronics and found my old Xbox. Went to power on
